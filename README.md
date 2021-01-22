@@ -22,3 +22,13 @@ The AWS services require a GitHub OAuth token to be able to build the Docker con
 ### Architecture
 
 ![architecture](cloudformation/architecture.png)
+
+### Extra Packages
+- intake
+- intake-stac
+- sat-search
+- rioxarray
+- geopandas
+
+### Jupyter Lab
+You can access conda environments via a terminal - trying to install geopandas and rioxarray into the conda_dask3py environment just wasn't happening.  A which -a pip gives you the environment path and you can install them in the environment directory with the local pip3 to save some time.  Installing from notebooks seemed to install to the system environment instead.
